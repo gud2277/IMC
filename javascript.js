@@ -9,8 +9,8 @@ calc.onclick = function(){
     if(kg.value!="" && m.value!=""){
         imcx = (kg.value / (m.value* m.value));
         imc.innerHTML = imcx
-        console.log(imcx);
-
+        
+        
         if(imcx<18.5){ lectura.innerHTML = "Peso inferior al normal"; }
         else if(imcx>=18.5 && imcx<=24.9){ lectura.innerHTML = "Peso normal"; }
         else if(imcx>=25 && imcx<=29.9){ lectura.innerHTML = "Peso superior al normal"; }
@@ -21,3 +21,5 @@ calc.onclick = function(){
     }
 
 };
+console.log(numero.toFixed())
+buton.addEventListener("click",calc.onclick);
